@@ -11,6 +11,7 @@ from django.core.exceptions import PermissionDenied
 from django.utils.http import urlsafe_base64_decode
 from django.contrib.auth.tokens import default_token_generator
 from django.template.defaultfilters import slugify
+from django.views.decorators.csrf import csrf_protect 
 
 
 # Restrict the vendor from accessing the customer page
@@ -29,6 +30,7 @@ def check_role_customer(user):
         raise PermissionDenied
 
 
+@csrf_protect
 def registerUser(request):
     if request.user.is_authenticated:
         messages.warning(request, 'You are already logged in.')
@@ -75,6 +77,7 @@ def registerUser(request):
     return render(request, 'accounts/registerUser.html', context)
 
 
+@csrf_protect 
 def registerVendor(request):
     if request.user.is_authenticated:
         messages.warning(request, 'You are already logged in.')
