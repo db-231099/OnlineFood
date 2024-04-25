@@ -55,6 +55,7 @@ TEMPLATES = [
                 'accounts.context_processors.get_vendor',
                 'marketplace.context_processors.get_cart_counter',
                 'marketplace.context_processors.get_cart_amounts',
+                'accounts.context_processors.get_google_api',
             ],
         },
     },
@@ -146,4 +147,6 @@ EMAIL_HOST_USER = 'foodcustomer2310@gmail.com'
 EMAIL_HOST_PASSWORD = 'nntixvbkjrujkqkc'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'foodOnline Marketplace <foodcustomer2310@gmail.com>'
+
+GOOGLE_API_KEY = "AIzaSyAcsPbt8v6hFASQk9wzzB5Hgx-IebMgguM"
 
