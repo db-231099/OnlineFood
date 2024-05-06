@@ -14,9 +14,8 @@
 						<h1 style="font-size: 40px; color: #505050; text-transform: uppercase; line-height: 50px; margin-bottom: 25px; text-align:center;">
 							We are in the business of food<br>our restaurants do</h1>
 						<p style="font-size: 18px; letter-spacing: 1px; color: #505050; text-align:center;">
-							Ridiculus sociosqu
-							cursus neque cursus curae ante scelerisque vehicula.</p>
-					</div>
+							Order and Enjoy your favorite food.</p>
+					</div>  
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
 					<div class="main-search fancy bg-holder">
@@ -77,7 +76,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="element-title align-left">
 						<h2>Top Restaurants</h2>
-						<p>Explore restaurants, bars, and cafés by locality</p>
+						<p>Explore restaurants, cafes by locality</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0 !important; padding-left: 0 !important;">
@@ -108,7 +107,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="element-title align-center">
 						<h2>Choose From Most Popular Restaurants</h2>
-						<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+						<p>Here are some popular Restaurants near your location.</p>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -127,9 +126,15 @@
 												{% endif %}
 											</a>
 										</figure>
-										    <span class="restaurant-status close">
+										{% if vendor.is_open %}
+										<span class="restaurant-status open">
+										    <em class="bookmarkRibbon"></em>Open
+										</span>
+										{% else %}
+										<span class="restaurant-status close">
 										    <em class="bookmarkRibbon"></em>Close
 										</span>
+										{% endif %}
 									</div>
 									<div class="text-holder">
 			
