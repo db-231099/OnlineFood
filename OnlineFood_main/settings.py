@@ -166,3 +166,6 @@ GDAL_LIBRARY_PATH = os.path.join(BASE_DIR, 'env\Lib\site-packages\osgeo\gdal.dll
 PAYPAL_CLIENT_ID ='AbEsqXe7z1IM5svZ7LN5nAZJ49KdCbSpRCGOXFBxNOOM9y0dml-Ph9AzYqd8-HTNuRnvdiAIT23NMc4F'
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
+
+RZP_KEY_ID = 'rzp_test_WMiXDWKp0y5elm'
+RZP_KEY_SECRET = 'Cao8uc2EYGSvXjRoJfUAtUKx'
