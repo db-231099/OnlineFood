@@ -34,6 +34,23 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key={{GOOGLE_API_KEY}}&libraries=places&callback=initAutoComplete" defer></script>
 	{% endif %}
 
+	<!-- Include datatables plugin script and css -->
+	<!-- <link rel="stylesheet" href="//cdn.datatables.net/2.0.7/css/dataTables.dataTables.min.css">
+	<script src="//cdn.datatables.net/2.0.7/js/dataTables.min.js"></script>
+
+	<script>
+		let table = new DataTable('#myOrdersTable');
+	</script> -->
+
+	<!-- Include Datatables plugin script and css -->
+	<link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+	<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script>
+		$(document).ready( function () {
+			$('#myOrdersTable').DataTable();
+		} );
+	</script>
+
 	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
 	<style>
